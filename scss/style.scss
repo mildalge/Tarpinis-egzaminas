@@ -7,13 +7,90 @@
   font-family: 'Lato';
 }
 
-.image {
-  height: 200px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  max-width: 1200px;
+  height: 70px;
+  margin: auto;
+  padding: 10px 0;
+
+  .text {
+    display: flex;
+    // height: 70px;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  
+  button {
+  display: flex;
+  padding: 10px 15px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  font-size: medium;
+  }
+}
+
+.first {
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
+  height: 500px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+
+  .image {
   height: 500px;
   background: url(../resources/content/bg-masthead.jpg);
   background-size: cover;
-}
+  position: relative;
+  
+  }
 
-h1 {
-  color: red;
+  h1 {
+  color: white;
+  // display: flex;
+  max-width: 400px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  input[type=email] {
+    width: 200px;
+    height: 38px;
+    border: 1px transparent;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%)
+    
+  }
+
+  button {
+  // display: flex;
+  padding: 10px 15px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  font-size: medium;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  }
+
+
+
+  
 }
