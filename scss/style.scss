@@ -44,7 +44,7 @@ header {
   display: flex;
 
   .container { 
-    width: 40%;
+    width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -52,6 +52,8 @@ header {
 
     .text {
       color:white;
+      padding-left: 40px;
+      padding-right: 40px;
       text-align: center;
     }
 
@@ -62,7 +64,7 @@ header {
     gap:10px;
     
     input[type=email] {
-      width: 250px;
+      width: 350px;
       height: 42px;
       border: 1px transparent;
       padding: 10px;
@@ -112,14 +114,12 @@ header {
   }
   .item2{
     display: flex;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 160%;   
   }
   .item3{
-    display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +129,7 @@ header {
 }
 
 #third{
-  height: 300px;
+  height: 900px;
   display: flex;
   flex-wrap: wrap;
   width: 98%;
@@ -193,5 +193,70 @@ header {
   background-size: cover;
   }
 }
+
+#fourth{
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .say {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .faces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    p{
+      text-align: center;
+    }
+
+    h3{
+      padding: 10px;
+    }
+
+    .item{
+      height: 300px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 160%; 
+    }
+
+    .face{
+      width: 200px;
+      height: 200px;
+      color: red;
+      background-image: url(../resources/content/testimonials-1.jpg);
+      background-size: cover;
+      border-radius: 200px;
+    }
+  
+    .face1{
+      width: 200px;
+      height: 200px;
+      color: red;
+      background-image: url(../resources/content/testimonials-2.jpg);
+      background-size: cover;
+      border-radius: 200px;
+    }
+  
+    .face2{
+      width: 200px;
+      height: 200px;
+      color: red;
+      background-image: url(../resources/content/testimonials-3.jpg);
+      background-size: cover;
+      border-radius: 200px;
+    }
+  }
+}
+
 
 
