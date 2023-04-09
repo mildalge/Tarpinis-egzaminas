@@ -34,12 +34,22 @@ header {
   }
 }
 
+@media(max-width:425px) {
+  header {
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+}
+
 #first{
   background: url(../resources/content/bg-masthead.jpg);
   background-size: cover;
+  background-position: center;
   height: 500px;
-  // width: 100%;
-  // max-width: 1200px;
   margin: auto;
   display: flex;
 
@@ -63,25 +73,25 @@ header {
     justify-content: center;
     gap:10px;
     
-    input[type=email] {
-      width: 350px;
-      height: 42px;
-      border: 1px transparent;
-      padding: 10px;
-      border-radius: 4px;
-    }
-    button {
-      padding: 10px 15px;
-      border: 2px solid #007bff;
-      border-radius: 4px;
-      background: #007bff;
-      color: white;
-      font-size: medium;
-    }
-
-    } 
+      input[type=email] {
+        width: 350px;
+        height: 42px;
+        border: 1px transparent;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      button {
+        padding: 10px 15px;
+        border: 2px solid #007bff;
+        border-radius: 4px;
+        background: #007bff;
+        color: white;
+        font-size: medium;
+      }
+    }  
   }
 }
+
 
 #second{
   background: #f8f9fa;
@@ -113,6 +123,7 @@ header {
     line-height: 160%;    
   }
   .item2{
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,11 +131,19 @@ header {
     line-height: 160%;   
   }
   .item3{
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 160%;   
+  }
+}
+
+@media (max-width: 768px){
+  #second {
+      flex-direction: column;
+      text-align: center;
   }
 }
 
@@ -204,13 +223,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
+    padding-top: 60px;
   }
 
   .faces{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 20px;
 
     p{
       text-align: center;
@@ -232,10 +253,10 @@ header {
     .face{
       width: 200px;
       height: 200px;
-      color: red;
       background-image: url(../resources/content/testimonials-1.jpg);
       background-size: cover;
       border-radius: 200px;
+      box-shadow: 5px 6px 10px grey;
     }
   
     .face1{
@@ -245,6 +266,7 @@ header {
       background-image: url(../resources/content/testimonials-2.jpg);
       background-size: cover;
       border-radius: 200px;
+      box-shadow: 5px 6px 10px grey;
     }
   
     .face2{
@@ -254,9 +276,105 @@ header {
       background-image: url(../resources/content/testimonials-3.jpg);
       background-size: cover;
       border-radius: 200px;
+      box-shadow: 5px 6px 10px grey;
     }
   }
 }
 
+#fifth{
+  background: url(../resources/content/bg-masthead.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  // width: 100%;
+  // max-width: 1200px;
+  margin: auto;
+  display: flex;
+
+  .container { 
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .text {
+      color:white;
+      padding-left: 40px;
+      padding-right: 40px;
+      text-align: center;
+    }
+
+    .email {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    
+    input[type=email] {
+      width: 350px;
+      height: 42px;
+      border: 1px transparent;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 15px;
+      border: 2px solid #007bff;
+      border-radius: 4px;
+      background: #007bff;
+      color: white;
+      font-size: medium;
+    }
+
+    } 
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8f9fa;
+  height: 120px;
+  margin: auto;
+  padding: 10px 0;
+
+  .contacts {
+    display:flex;
+    flex-direction: column;
+
+    nav {
+      display: flex;
+      gap:4px;
+    }
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    
+  }
+
+  span{
+    color: black;
+    font-weight: lighter;
+    padding: 6px;
+  }
+
+  p {
+    font-size: 0.8em;
+    padding-top: 5px;
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+    color:#007bff;
+  }
+
+}
 
 
