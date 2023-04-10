@@ -23,7 +23,6 @@ header {
 
   .text {
     display: flex;
-    // height: 70px;
     font-size: 1.4em;
     font-weight: bold;
   }
@@ -46,6 +45,15 @@ header {
     align-items: center;
     gap: 10px;
     padding: 15px;
+
+    .text {
+      font-size: 1em;
+    }
+
+    button{
+      padding: 8px 13px;
+      font-size: smaller;
+    }
   }
 }
 
@@ -72,19 +80,20 @@ header {
     }
 
     .email {
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    gap:10px;
-    
-      input[type=email] {
-        padding: 11px 15px;
-        border: 2px transparent;
-        border-radius: 4px;
-        font-size: medium;
-        width: 340px;
-        margin: auto;
-      }
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      gap:10px;
+    }
+      
+    input[type=email] {
+      padding: 11px 15px;
+      border: 2px transparent;
+      border-radius: 4px;
+      font-size: medium;
+      width: 340px;
+      margin: auto;
+    }
 
       button {
         padding: 10px 15px;
@@ -93,8 +102,7 @@ header {
         background: #007bff;
         color: white;
         font-size: medium;
-      }
-    }  
+    }
   }
 }
 
@@ -111,8 +119,7 @@ header {
 
       } 
       input[type=email] {
-        min-width: 100px;
-
+        max-width: 257px;
       } 
       
       button {
@@ -171,7 +178,7 @@ header {
 @media (max-width: 600px){
   #second {
       flex-direction: column;
-      height: 600px;
+      height: 900px;
   }
 }
 
@@ -349,6 +356,7 @@ header {
        .faces{
         flex-wrap: wrap;
         gap:40px;
+        padding-bottom: 60px;
       }
   }
 }
@@ -357,7 +365,7 @@ header {
   background: url(../resources/content/bg-masthead.jpg);
   background-size: cover;
   background-position: center;
-  height: 540px;
+  height: 440px;
   display: flex;
 
   .container { 
@@ -406,7 +414,7 @@ header {
   #fifth {
       .container {
         width: 99%;
-        height: auto;
+        height: 400px auto;
         align-items: center;
       }
       .email{
@@ -415,7 +423,7 @@ header {
 
       } 
       input[type=email] {
-        max-width: 340px;
+        max-width: 257px;
       } 
       
       button {
@@ -452,7 +460,6 @@ footer {
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9em;
-    
   }
 
   span{
@@ -476,12 +483,15 @@ footer {
 
 @media(max-width:600px) {
   footer {
-    height: auto;
+    height: 150px;
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding: 60px 20px 40px 20px;
+
+    .social {
+      font-size:x-large;
+    }
   }
 }
 
