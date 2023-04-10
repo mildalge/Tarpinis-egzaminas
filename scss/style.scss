@@ -47,7 +47,6 @@ header {
     gap: 10px;
     padding: 15px;
   }
-
 }
 
 #first{
@@ -74,21 +73,19 @@ header {
 
     .email {
     height: 42px;
-    width: auto;
     display: flex;
     justify-content: center;
-    gap:100px;
+    gap:10px;
     
       input[type=email] {
-        // size: 200;
-        // width: 350px;
-        // height: 42px;
         padding: 11px 15px;
         border: 2px transparent;
         border-radius: 4px;
         font-size: medium;
-        width: 150%;
+        width: 340px;
+        margin: auto;
       }
+
       button {
         padding: 10px 15px;
         border: 2px solid #007bff;
@@ -104,15 +101,18 @@ header {
 @media (max-width:600px){
   #first {
       .container {
-        width: 80%;
+        width: 99%;
+        height: auto;
+        align-items: center;
       }
       .email{
         flex-wrap: wrap;
         width: 90%;
-       
+
       } 
       input[type=email] {
-        width: 90%;
+        min-width: 100px;
+
       } 
       
       button {
@@ -346,9 +346,9 @@ header {
 
 @media (max-width: 600px){
   #fourth{
-      height: 1000px;
        .faces{
         flex-wrap: wrap;
+        gap:40px;
       }
   }
 }
@@ -357,16 +357,13 @@ header {
   background: url(../resources/content/bg-masthead.jpg);
   background-size: cover;
   background-position: center;
-  height: 300px;
-  // width: 100%;
-  // max-width: 1200px;
-  margin: auto;
+  height: 540px;
   display: flex;
 
   .container { 
     width: 50%;
-
     margin: auto;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -380,7 +377,7 @@ header {
 
     .email {
     height: 42px;
-    width: auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     gap:10px;
@@ -402,6 +399,28 @@ header {
     }
 
     } 
+  }
+}
+
+@media (max-width:600px){
+  #fifth {
+      .container {
+        width: 99%;
+        height: auto;
+        align-items: center;
+      }
+      .email{
+        flex-wrap: wrap;
+        width: 90%;
+
+      } 
+      input[type=email] {
+        max-width: 340px;
+      } 
+      
+      button {
+        width: 90%;
+      }
   }
 }
 
@@ -462,6 +481,7 @@ footer {
     text-align: center;
     gap: 20px;
     padding-top: 60px;
+    padding-bottom: 40px;
   }
 }
 
