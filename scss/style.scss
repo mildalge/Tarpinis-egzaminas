@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato';
+  cursor: pointer;
 }
 
 header {
@@ -15,6 +16,10 @@ header {
   height: 70px;
   margin: auto;
   padding: 10px 0;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
 
   .text {
     display: flex;
@@ -34,7 +39,7 @@ header {
   }
 }
 
-@media(max-width:425px) {
+@media(max-width:600px) {
   header {
     height: auto;
     justify-content: space-around;
@@ -58,7 +63,7 @@ header {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 
     .text {
       color:white;
@@ -69,16 +74,20 @@ header {
 
     .email {
     height: 42px;
+    width: auto;
     display: flex;
     justify-content: center;
-    gap:10px;
+    gap:100px;
     
       input[type=email] {
-        width: 350px;
-        height: 42px;
-        border: 1px transparent;
-        padding: 10px;
+        // size: 200;
+        // width: 350px;
+        // height: 42px;
+        padding: 11px 15px;
+        border: 2px transparent;
         border-radius: 4px;
+        font-size: medium;
+        width: 150%;
       }
       button {
         padding: 10px 15px;
@@ -92,6 +101,25 @@ header {
   }
 }
 
+@media (max-width:600px){
+  #first {
+      .container {
+        width: 80%;
+      }
+      .email{
+        flex-wrap: wrap;
+        width: 90%;
+       
+      } 
+      input[type=email] {
+        width: 90%;
+      } 
+      
+      button {
+        width: 90%;
+      }
+  }
+}
 
 #second{
   background: #f8f9fa;
@@ -140,10 +168,10 @@ header {
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
   #second {
       flex-direction: column;
-      text-align: center;
+      height: 600px;
   }
 }
 
@@ -210,6 +238,41 @@ header {
   width: 50%;
   background-image: url(../resources/content/bg-showcase-3.jpg);
   background-size: cover;
+  }
+}
+
+@media (max-width: 600px){
+  #third{
+      height: 1800px;
+      width: 100%;
+      max-width: 600px;
+      flex-wrap: wrap;
+
+      :nth-of-type(2){
+        order: -1;
+      }
+      :nth-of-type(5){
+        order: 1;
+      }      
+      .foto {
+        width: 100%;
+      }
+      .text {
+        width: 100%;
+      }
+      .foto1 {
+        width: 100%;
+      }
+      .text1 {
+        width: 100%;
+      }
+      .text2 {
+        width: 100%;
+      }
+      .foto2 {
+        width: 100%;
+      }
+
   }
 }
 
@@ -281,6 +344,15 @@ header {
   }
 }
 
+@media (max-width: 600px){
+  #fourth{
+      height: 1000px;
+       .faces{
+        flex-wrap: wrap;
+      }
+  }
+}
+
 #fifth{
   background: url(../resources/content/bg-masthead.jpg);
   background-size: cover;
@@ -293,6 +365,7 @@ header {
 
   .container { 
     width: 50%;
+
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -307,6 +380,7 @@ header {
 
     .email {
     height: 42px;
+    width: auto;
     display: flex;
     justify-content: center;
     gap:10px;
@@ -339,6 +413,10 @@ footer {
   height: 120px;
   margin: auto;
   padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 
   .contacts {
     display:flex;
@@ -375,6 +453,16 @@ footer {
     color:#007bff;
   }
 
+}
+
+@media(max-width:600px) {
+  footer {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding-top: 60px;
+  }
 }
 
 
